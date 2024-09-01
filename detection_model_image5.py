@@ -304,12 +304,12 @@ def find_symmetric_point(line_intercept, point):
     return x_symmetric, y_symmetric
 
 if __name__ == '__main__':
-    n=35
-    fp = 'test_img5/{}_front.bmp'.format(n)
-    flp = 'test_img5/{}_l_left.bmp'.format(n)
-    lp = 'test_img5/{}_left.bmp'.format(n)
-    rp = 'test_img5/{}_right.bmp'.format(n)
-    frp = 'test_img5/{}_r_right.bmp'.format(n)
+    n=1
+    fp = 'test_img/{}_front.bmp'.format(n)
+    flp = 'test_img/{}_l_left.bmp'.format(n)
+    lp = 'test_img/{}_left.bmp'.format(n)
+    rp = 'test_img/{}_right.bmp'.format(n)
+    frp = 'test_img/{}_r_right.bmp'.format(n)
     model = Model(fp, lp, flp, rp, frp, is_invert_left=0, is_invert_right=1)
     print(f'左耳参数d1-7:{model.left_ear_parameters} [cm]')
     print(f'右耳参数d1-7:{model.right_ear_parameters} [cm]')
