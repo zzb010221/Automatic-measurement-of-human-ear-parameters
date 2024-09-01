@@ -131,7 +131,7 @@ class Model:
         return matlab_points
 
     def yolo_detection(self, img_path, confidence=0.4):
-        model_path = 'model_checkpoints/yolo_image5.pth'
+        model_path = 'yolo_image5.pth'
         classes_path = 'model_config/ear_classes_image5.txt'
         anchors_path = 'model_config/yolo_anchors.txt'
         anchors_mask = [[6, 7, 8], [3, 4, 5], [0, 1, 2]]
