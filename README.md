@@ -1,5 +1,18 @@
- Automatic measurement of human ear parameters based on object detection and landmark extraction
+# Automatic measurement of human ear parameters based on object detection and landmark extraction
  
-数据准备：将采集的五张图像放在test_img文件夹下，默认命名格式为：人脸正面1_front.bmp、人脸左侧面1_l_left.bmp、人耳左正面1_left.bmp、人脸右侧面1_r_right.bmp、人耳右正面1_right.bmp。
+## Data preparation
 
-运行过程：修改detection_model_image5.py里读取图片的序号，运行程序，打印框会输出头高、头宽以及人耳一系列参数，同时弹出虹膜检测、人耳检测、人耳关键点检测的效果图。
+Put the five collected images in the test_img folder. The default naming format is: 1_front.bmp, 1_l_left.bmp, 1_left.bmp, 1_r_right.bmp, 1_right.bmp.
+
+<div align="center">
+	<img src="/test_img/1_front.bmp" alt="Editor" width="150">
+	<img src="/test_img/1_l_left.bmp" alt="Editor" width="150">
+ <img src="/test_img/1_left.bmp" alt="Editor" width="150">
+ <img src="/test_img/1_r_right.bmp" alt="Editor" width="150">
+ <img src="/test_img/1_right.bmp" alt="Editor" width="150">
+</div>
+
+## Operation process
+
+Modify the serial number of the image read in detection_model_image5.py and run the program. The print box will output a series of parameters such as head height, head width and human ear, and pop up the effect pictures of iris detection, human ear detection and human ear landmark extraction.
+
